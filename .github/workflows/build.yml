@@ -39,6 +39,9 @@ jobs:
           name: aes-encryption-tool
           path: app/build/libs/*.jar
 
+      - name: List JAR Files
+        run: ls -R app/build/libs
+
       # Optional: Create GitHub release and upload the JAR
       - name: Create GitHub Release
         id: create_release
