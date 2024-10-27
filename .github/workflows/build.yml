@@ -44,12 +44,11 @@ jobs:
         id: create_release
         uses: ncipollo/release-action@v1
         with:
-          tag: v1.0.0
+          tag: v1.0.0-${{ github.run_id }}
           name: "AES Encryption Utility"
           body: "New release with the latest JAR build."
           draft: false
           prerelease: false
-          skipIfReleaseExists: true
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       - name: Upload JAR to Release
