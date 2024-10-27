@@ -30,7 +30,7 @@ jobs:
         run: ./gradlew clean build
 
       - name: Debug - List Build Directory
-        run: ls -R build
+        run: ls -R app/build
 
       # Step 5: Upload the JAR file as an artifact
       - name: Upload JAR as artifact
