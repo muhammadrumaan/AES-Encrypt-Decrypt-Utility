@@ -49,6 +49,7 @@ jobs:
           body: "New release with the latest JAR build."
           draft: false
           prerelease: false
+          skipIfReleaseExists: true
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       - name: Upload JAR to Release
