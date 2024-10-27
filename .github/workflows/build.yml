@@ -42,7 +42,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           tag: v1.0.0
-          release_name: "AES Encryption Utility"
+          name: "AES Encryption Utility"
           body: "New release with the latest JAR build."
           draft: false
           prerelease: false
