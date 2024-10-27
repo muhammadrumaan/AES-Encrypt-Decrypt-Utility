@@ -29,6 +29,9 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew clean build
 
+      - name: Debug - List Build Directory
+        run: ls -R build
+
       # Step 5: Upload the JAR file as an artifact
       - name: Upload JAR as artifact
         uses: actions/upload-artifact@v3
