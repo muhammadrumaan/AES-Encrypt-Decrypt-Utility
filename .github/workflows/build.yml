@@ -61,3 +61,5 @@ jobs:
           asset_path: app/build/libs/aes-encryption-tool.jar
           asset_name: aes-encryption-tool.jar
           asset_content_type: application/java-archive
+        env:
+         GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
